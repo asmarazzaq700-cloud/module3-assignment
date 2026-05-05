@@ -3,43 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assignment Solution</title>
+  <title>Food, LLC</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-<h1>Our Menu</h1>
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
 
-<div class="row">
-
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="section">
-      <div class="title chicken">Chicken</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Food, LLC</a>
     </div>
-  </div>
 
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="section">
-      <div class="title beef">Beef</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav visible-xs">
+        <li><a href="#chicken">Chicken</a></li>
+        <li><a href="#beef">Beef</a></li>
+        <li><a href="#sushi">Sushi</a></li>
+      </ul>
     </div>
-  </div>
 
-  <div class="col-lg-4 col-md-12 col-sm-12">
-    <div class="section">
-      <div class="title sushi">Sushi</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
   </div>
+</nav>
 
+<!-- HEADING -->
+<div class="container text-center">
+  <h1>Our Menu</h1>
 </div>
+
+<!-- CONTENT -->
+<div class="container-fluid">
+  <div class="row">
+
+    <div id="chicken" class="col-xs-12 section">
+      <h2>Chicken</h2>
+      <p>
+        Our chicken dishes are prepared with fresh spices and grilled to perfection. From crispy fried chicken to juicy grilled platters, we serve taste that satisfies your cravings. Every bite delivers rich flavor and quality you can trust.
+      </p>
+    </div>
+
+    <div id="beef" class="col-xs-12 section">
+      <h2>Beef</h2>
+      <p>
+        Enjoy our premium beef selections, including tender steaks and delicious BBQ options. We use high-quality cuts cooked with care to bring out bold, mouth-watering flavors that make every meal memorable.
+      </p>
+    </div>
+
+    <div id="sushi" class="col-xs-12 section">
+      <h2>Sushi</h2>
+      <p>
+        Experience authentic sushi made with fresh ingredients and expert techniques. Our sushi rolls are crafted to deliver a perfect balance of taste and presentation, giving you a delightful dining experience.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
